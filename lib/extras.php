@@ -56,3 +56,17 @@ function admin_menu_remove_posts() {
   remove_menu_page( 'edit.php' );
 }
 add_action('admin_menu', __NAMESPACE__ . '\\admin_menu_remove_posts');
+
+/**
+ * Include ACF fields from both parent & child theme.
+ *
+ * @param array $paths Directories to load ACF JSON files from.
+ * @return array
+ */
+function acf_settings_load_json($paths) {
+  if (is_child_theme()) {
+    $paths[] = get_template_directory() . '/acf-json';
+  }
+  return $paths;
+}
+add_filter('acf/settings/load_json', __NAMESPACE__ . '\\acf_settings_load_json');
