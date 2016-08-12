@@ -1,0 +1,31 @@
+h1 {
+  @include heading-80;
+}
+
+h2 {
+  @include heading-24;
+}
+
+h3 {
+  @include heading-24;
+  @include core-19;
+}
+
+h4 {
+  @include heading-24;
+  @include core-16;
+}
+
+h5 {
+  @include heading-24;
+  @include core-16;
+}
+
+h6 {
+  @include heading-24;
+  @include core-16;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}

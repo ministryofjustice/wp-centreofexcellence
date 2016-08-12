@@ -1,0 +1,80 @@
+// Mixins shamelessly stolen from the external-link mixins
+@mixin email-link-size($content, $top, $top-hover: top) {
+  &:after {
+    content: $content;
+    background-position: right $top;
+  }
+
+  @if $top-hover == top {
+    $top-hover: $top;
+  }
+
+  &:hover:after {
+    background-position: right $top-hover;
+  }
+}
+
+@mixin email-link-12-no-hover {
+  @include email-link-size($content: "\A0\A0\A0\A0\A0\A0\A0\A0", $top: 0);
+}
+
+@mixin email-link-12 {
+  @include email-link-size($content: "\A0\A0\A0\A0\A0\A0\A0\A0", $top: 0, $top-hover: -388px);
+}
+
+@mixin email-link-13-no-hover {
+  @include email-link-size($content: "\A0\A0\A0\A0\A0", $top: 1px);
+}
+
+@mixin email-link-13 {
+  @include email-link-size($content: "\A0\A0\A0\A0\A0", $top: 1px, $top-hover: -387px);
+}
+
+@mixin email-link-14 {
+  @include email-link-size($content: "\A0\A0\A0\A0\A0", $top: 1px, $top-hover: -387px);
+}
+
+@mixin email-link-14-bold-no-hover {
+  @include email-link-size($content: "\A0\A0\A0\A0\A0\A0", $top: 2px);
+}
+
+@mixin email-link-16 {
+  @include email-link-size($content: "\A0\A0\A0\A0\A0", $top: 3px, $top-hover: -385px);
+}
+
+@mixin email-link-16-bold-no-hover {
+  @include email-link-size($content: "\A0\A0\A0\A0\A0\A0", $top: 3px);
+}
+
+@mixin email-link-19-no-hover {
+  @include email-link-size($content: "\A0\A0\A0\A0", $top: 6px);
+}
+
+@mixin email-link-19 {
+  @include email-link-size($content: "\A0\A0\A0\A0", $top: 6px, $top-hover: -382px);
+}
+
+@mixin email-link-19-bold-no-hover {
+  @include email-link-size($content: "\A0\A0\A0\A0\A0\A0", $top: 6px);
+}
+
+@mixin email-link-default {
+  &:after {
+    background-image: url("../images/email-link.png");
+    background-repeat: no-repeat;
+
+    @include device-pixel-ratio() {
+      background-image: url("../images/email-link@2x.png");
+      background-size: 12px 400px;
+    }
+  }
+}
+
+// Style rules
+.email-link {
+  @include email-link-default;
+  @include email-link-16;
+  @include media(tablet) {
+    @include email-link-19;
+  }
+}

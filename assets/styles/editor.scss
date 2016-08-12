@@ -1,0 +1,21 @@
+// govuk_frontend_toolkit
+@import "../../node_modules/govuk_frontend_toolkit/stylesheets/colours";
+@import "../../node_modules/govuk_frontend_toolkit/stylesheets/helpers";
+@import "../../node_modules/govuk_frontend_toolkit/stylesheets/measurements";
+@import "../../node_modules/govuk_frontend_toolkit/stylesheets/shims";
+@import "../../node_modules/govuk_frontend_toolkit/stylesheets/typography";
+@import "../../node_modules/govuk_frontend_toolkit/stylesheets/design-patterns/_buttons";
+
+// base rules
+@import "base/fonts";
+@import "base/variables";
+@import "base/basic";
+@import "base/headings";
+
+html {
+  background-color: $white;
+  padding: 1.5em;
+}
+body {
+  @include copy-16;
+}
