@@ -2,6 +2,8 @@
 
 namespace MOJ\CentreOfExcellence\Extras;
 
+use WP_Query;
+
 /**
  * Add <body> classes
  */
@@ -70,3 +72,18 @@ function acf_settings_load_json($paths) {
   return $paths;
 }
 add_filter('acf/settings/load_json', __NAMESPACE__ . '\\acf_settings_load_json');
+
+/**
+ * Disable frontend search functionality
+ *
+ * @param WP_Query $query
+ */
+function disable_search(WP_Query $query) {
+  if (!is_admin() && $query->is_search()) {
+    $query->is_search = false;
+    $query->query_vars['s'] = false;
+    $query->query['s'] = false;
+    $query->is_404 = true;
+  }
+}
+add_action('parse_query', __NAMESPACE__ . '\\disable_search');
