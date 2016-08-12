@@ -1,8 +1,8 @@
 <?php
 
-namespace Roots\Sage\Customizer;
+namespace MOJ\CentreOfExcellence\Customizer;
 
-use Roots\Sage\Assets;
+use MOJ\CentreOfExcellence\Assets;
 
 /**
  * Add postMessage support

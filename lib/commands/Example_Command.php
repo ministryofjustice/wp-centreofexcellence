@@ -1,6 +1,6 @@
 <?php
 
-namespace Roots\Sage\Commands;
+namespace MOJ\CentreOfExcellence\Commands;
 
 use WP_CLI;
 use WP_CLI_Command;

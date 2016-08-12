@@ -1,8 +1,8 @@
 <?php
 
-namespace Roots\Sage\Extras;
+namespace MOJ\CentreOfExcellence\Extras;
 
-use Roots\Sage\Setup;
+use MOJ\CentreOfExcellence\Setup;
 
 /**
  * Add <body> classes

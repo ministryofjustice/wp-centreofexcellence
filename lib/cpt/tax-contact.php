@@ -1,6 +1,6 @@
 <?php
 
-namespace Roots\Sage\CPT;
+namespace MOJ\CentreOfExcellence\CPT;
 
 class TaxContact {
   public $postType = 'tax-contact';

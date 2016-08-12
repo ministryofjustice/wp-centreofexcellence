@@ -1,6 +1,6 @@
 <?php
 
-namespace Roots\Sage\Assets;
+namespace MOJ\CentreOfExcellence\Assets;
 
 /**
  * Get paths for assets

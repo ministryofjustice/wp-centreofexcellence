@@ -1,6 +1,6 @@
 <?php
 
-namespace Roots\Sage\CPT;
+namespace MOJ\CentreOfExcellence\CPT;
 
 $path = dirname(__FILE__) . '/cpt/';
 $files = scandir($path);

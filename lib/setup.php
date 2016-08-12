@@ -1,8 +1,8 @@
 <?php
 
-namespace Roots\Sage\Setup;
+namespace MOJ\CentreOfExcellence\Setup;
 
-use Roots\Sage\Assets;
+use MOJ\CentreOfExcellence\Assets;
 
 /**
  * Theme setup
