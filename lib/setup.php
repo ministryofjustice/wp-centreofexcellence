@@ -25,7 +25,7 @@ function setup() {
   add_theme_support('html5', array('caption', 'comment-form', 'comment-list', 'gallery', 'search-form'));
 
   // Use main stylesheet for visual editor
-  // To add custom styles edit /assets/styles/layouts/_tinymce.scss
+  // To add custom styles edit /assets/styles/editor.scss
   add_editor_style(Assets\asset_path('styles/editor.css'));
 }
 add_action('after_setup_theme', __NAMESPACE__ . '\\setup');

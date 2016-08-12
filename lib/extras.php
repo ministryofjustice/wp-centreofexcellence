@@ -2,8 +2,6 @@
 
 namespace MOJ\CentreOfExcellence\Extras;
 
-use MOJ\CentreOfExcellence\Setup;
-
 /**
  * Add <body> classes
  */
