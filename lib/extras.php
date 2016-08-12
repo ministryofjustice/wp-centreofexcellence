@@ -74,6 +74,13 @@ function acf_settings_load_json($paths) {
 add_filter('acf/settings/load_json', __NAMESPACE__ . '\\acf_settings_load_json');
 
 /**
+ * Create an ACF Options page.
+ */
+if (function_exists('acf_add_options_page')) {
+  acf_add_options_page();
+}
+
+/**
  * Disable frontend search functionality
  *
  * @param WP_Query $query
