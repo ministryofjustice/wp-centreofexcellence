@@ -1,6 +1,6 @@
 <?php
 
-namespace Roots\Sage\Commands;
+namespace MOJ\CentreOfExcellence\Commands;
 
 // WP_CLI class only exists when running via the command line
 if (!class_exists('\WP_CLI')) {

@@ -1,5 +1,10 @@
 <?php
 /**
+ * This theme was built using Sage 8.4.2 by Roots
+ * Available here: https://github.com/roots/sage/releases/tag/8.4.2
+ *
+ * -----------------------------------------------------------------------------
+ *
  * Sage includes
  *
  * The $sage_includes array determines the code library included in your theme.

@@ -1,6 +1,6 @@
 <?php
 
-namespace Roots\Sage\Titles;
+namespace MOJ\CentreOfExcellence\Titles;
 
 /**
  * Page titles

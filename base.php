@@ -1,7 +1,7 @@
 <?php
 
-use Roots\Sage\Setup;
-use Roots\Sage\Wrapper;
+use MOJ\CentreOfExcellence\Setup;
+use MOJ\CentreOfExcellence\Wrapper;
 
 ?>
 <!doctype html>

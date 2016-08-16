@@ -6,3 +6,12 @@ node_modules
 npm-debug.log
 vendor
 .idea
+
+# Ignore compiled dev assets, but not production assets
+# We need to version compiled assets because wpengine doesn't support a build process
+dist/scripts/customizer.js*
+dist/scripts/main.js*
+dist/styles/editor.css*
+dist/styles/ie7.css*
+dist/styles/ie8.css*
+dist/styles/main.css*

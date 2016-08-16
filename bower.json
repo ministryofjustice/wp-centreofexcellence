@@ -1,8 +1,8 @@
 {
-  "name": "sage",
-  "homepage": "https://roots.io/sage/",
+  "name": "centreofexcellence",
+  "homepage": "https://github.com/ministryofjustice/wp-centreofexcellence",
   "authors": [
-    "Ben Word <ben@benword.com>"
+    "Ollie Treend <ollie@treend.com>"
   ],
   "license": "MIT",
   "private": true

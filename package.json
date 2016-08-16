@@ -1,15 +1,15 @@
 {
-  "name": "sage",
-  "version": "8.4.2",
-  "author": "Ben Word <ben@benword.com>",
-  "homepage": "https://roots.io/sage/",
+  "name": "centreofexcellence",
+  "version": "0.1.0",
+  "author": "Ollie Treend <ollie@treend.com>",
+  "homepage": "https://github.com/ministryofjustice/wp-centreofexcellence",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/roots/sage.git"
+    "url": "git://github.com/ministryofjustice/wp-centreofexcellence.git"
   },
   "bugs": {
-    "url": "https://github.com/roots/sage/issues"
+    "url": "https://github.com/ministryofjustice/wp-centreofexcellence/issues"
   },
   "licenses": [
     {

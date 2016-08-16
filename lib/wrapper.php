@@ -1,6 +1,6 @@
 <?php
 
-namespace Roots\Sage\Wrapper;
+namespace MOJ\CentreOfExcellence\Wrapper;
 
 /**
  * Theme wrapper

@@ -60,11 +60,11 @@
 
 @mixin email-link-default {
   &:after {
-    background-image: url("../images/email-link.png");
+    background-image: file-url("email-link.png");
     background-repeat: no-repeat;
 
     @include device-pixel-ratio() {
-      background-image: url("../images/email-link@2x.png");
+      background-image: file-url("email-link@2x.png");
       background-size: 12px 400px;
     }
   }

@@ -1,8 +1,8 @@
 <?php
 
-namespace Roots\Sage\Extras;
+namespace MOJ\CentreOfExcellence\Extras;
 
-use Roots\Sage\Setup;
+use WP_Query;
 
 /**
  * Add <body> classes
@@ -58,3 +58,39 @@ function admin_menu_remove_posts() {
   remove_menu_page( 'edit.php' );
 }
 add_action('admin_menu', __NAMESPACE__ . '\\admin_menu_remove_posts');
+
+/**
+ * Include ACF fields from both parent & child theme.
+ *
+ * @param array $paths Directories to load ACF JSON files from.
+ * @return array
+ */
+function acf_settings_load_json($paths) {
+  if (is_child_theme()) {
+    $paths[] = get_template_directory() . '/acf-json';
+  }
+  return $paths;
+}
+add_filter('acf/settings/load_json', __NAMESPACE__ . '\\acf_settings_load_json');
+
+/**
+ * Create an ACF Options page.
+ */
+if (function_exists('acf_add_options_page')) {
+  acf_add_options_page();
+}
+
+/**
+ * Disable frontend search functionality
+ *
+ * @param WP_Query $query
+ */
+function disable_search(WP_Query $query) {
+  if (!is_admin() && $query->is_search()) {
+    $query->is_search = false;
+    $query->query_vars['s'] = false;
+    $query->query['s'] = false;
+    $query->is_404 = true;
+  }
+}
+add_action('parse_query', __NAMESPACE__ . '\\disable_search');

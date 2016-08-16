@@ -1,0 +1,42 @@
+{
+    "key": "group_57ade051d76a4",
+    "title": "Site Footer",
+    "fields": [
+        {
+            "key": "field_57ade05ff9bc4",
+            "label": "'Report a Problem' email address",
+            "name": "problem_email",
+            "type": "email",
+            "instructions": "The email address used for the 'Report a Problem' link in the footer.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1471013112
+}
