@@ -15,7 +15,7 @@
     );
     while (have_rows('main_content')) {
       the_row();
-      $layout = get_sub_field('acf_fc_layout');
+      $layout = get_row_layout();
       get_template_part('templates/homepage-layouts/' . $layout_templates[$layout]);
     }
 
@@ -34,7 +34,7 @@
     );
     while (have_rows('sidebar_content')) {
       the_row();
-      $layout = get_sub_field('acf_fc_layout');
+      $layout = get_row_layout();
       get_template_part('templates/homepage-layouts/' . $layout_templates[$layout]);
     }
 
