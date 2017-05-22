@@ -1,0 +1,6 @@
+{
+    "name": "ministryofjustice/wp-centreofexcellence",
+    "description": "A WordPress parent theme for creating Centre of Excellence websites.",
+    "type": "wordpress-theme",
+    "require": {}
+}
