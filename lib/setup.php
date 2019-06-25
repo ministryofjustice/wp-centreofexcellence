@@ -34,19 +34,19 @@ add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
  * Theme assets
  */
 function assets() {
-  wp_enqueue_style('sage/css', Assets\asset_path('styles/main.css'), false, null);
+  wp_enqueue_style('sage/css', Assets\asset_path('css/main.css'), false, null);
 
-  wp_enqueue_style('sage/ie8', Assets\asset_path('styles/ie8.css'), false, null);
+  wp_enqueue_style('sage/ie8', Assets\asset_path('css/ie8.css'), false, null);
   wp_style_add_data('sage/ie8', 'conditional', 'IE 8');
 
-  wp_enqueue_style('sage/ie7', Assets\asset_path('styles/ie7.css'), false, null);
+  wp_enqueue_style('sage/ie7', Assets\asset_path('css/ie7.css'), false, null);
   wp_style_add_data('sage/ie7', 'conditional', 'IE 7');
 
   if (is_single() && comments_open() && get_option('thread_comments')) {
     wp_enqueue_script('comment-reply');
   }
 
-  wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), array('jquery'), null, true);
+  wp_enqueue_script('sage/js', Assets\asset_path('js/main.js'), array('jquery'), null, true);
 
   wp_enqueue_script('sage/html5', 'https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js', array(), null);
   wp_script_add_data('sage/html5', 'conditional', 'lte IE 8');
